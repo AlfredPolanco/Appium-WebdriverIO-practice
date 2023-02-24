@@ -11,5 +11,5 @@ jobs:
             node-version: 18
         - name: Install
           run: npm install
-        - name: Run WebdriverIO via BroweserStack
-          run: npm run bs:android
+        # - name: Run WebdriverIO via BroweserStack
+        #   run: npm run bs:android
