@@ -4,8 +4,9 @@
   "description": "This is a practice repo that automates mobile tests using Appium JS",
   "main": "index.js",
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js",
-    "test": "npm run wdio && npm run reports",
+    "bs:android": "wdio run conf/wdio-android-bs.conf.js",
+    "local": "wdio run conf/wdio-local.conf.js",
+    "test": "npm run local && npm run reports",
     "reports": " allure generate --clean allure-results && allure open"
   },
   "repository": {
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/AlfredPolanco/Appium-js-practice#readme",
   "dependencies": {
     "@wdio/cli": "^8.3.10",
+    "browserstack-local": "^1.5.1",
     "webdriverio": "^8.3.10"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-const { WelcomePage } = require("../../pages/welcomePage");
+const { WelcomePage } = require("../../../pages/welcomePage");
 
 describe('Sample', ()=> {
     it('Sample test', async () => {
