@@ -8,7 +8,7 @@
     "local": "wdio run conf/wdio-local.conf.js",
     "test": "npm run local && npm run reports",
     "reports": " allure generate --clean allure-results && allure open",
-    "prettier": "prettier --write tests && prettier --write pages && prettier --write conf"
+    "prettier": "prettier --write tests && prettier --write conf"
   },
   "repository": {
     "type": "git",

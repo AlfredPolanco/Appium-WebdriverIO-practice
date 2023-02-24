@@ -22,6 +22,7 @@ exports.config = {
 				'android.permission.ACCESS_NOTIFICATION_POLICY': true,
 				'android.permission.ACCESS_FINE_LOCATION': true,
 			},
+			'appium:fullReset': true,
 		},
 	],
 	logLevel: 'info',
