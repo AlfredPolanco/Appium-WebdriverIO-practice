@@ -24,6 +24,7 @@
   "dependencies": {
     "@wdio/cli": "^8.3.10",
     "browserstack-local": "^1.5.1",
+    "uuid": "^9.0.0",
     "webdriverio": "^8.3.10"
   },
   "devDependencies": {
