@@ -11,6 +11,30 @@ jobs:
             node-version: 18
         - name: Install
           run: npm install
+
+        - name: Install Appium
+          run: npm install -g appium
+
+        - name: Start Appium server
+          run: appium --log-timestamp --port 4723
+
+        - name: Start Emulator
+           run: emulator -avd <emulator-5554> -no-window
+
+        - name: Wait for Emulator
+          run: |
+            i=0
+            while [ $i -lt 15 ]; do
+              sleep 1
+              adb devices | grep emulator && break
+              i=$((i+1))
+            done
+
+        - name: Run Appium tests
+          run: npm test
+
+        - name: Stop Emulator
+          run: adb emu kill
         # - name: Test
         #   run: npm run test
         # - uses: actions/upload-artifact@v1
