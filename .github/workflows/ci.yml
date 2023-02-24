@@ -11,10 +11,5 @@ jobs:
             node-version: 18
         - name: Install
           run: npm install
-        # - name: Test
-        #   run: npm run test
-        # - uses: actions/upload-artifact@v1
-        #   if: failure()
-        #   with:
-        #     name: logs
-        #     path: logs
+        - name: Run WebdriverIO via BroweserStack
+          run: npm run bs:android
