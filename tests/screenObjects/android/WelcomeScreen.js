@@ -1,4 +1,4 @@
-exports.WelcomePage = class WelcomePage {
+exports.WelcomeScreen = class WelcomeScreen {
 	async welcome() {
 		const welcomeText = await $('//android.widget.TextView[@text="Welcome to"]');
 		welcomeText.isDisplayed();

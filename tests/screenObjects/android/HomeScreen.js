@@ -1,4 +1,4 @@
-exports.HomePage = class HomePage {
+exports.HomeScreen = class HomeScreen {
 	async shopPage() {
 		const shopIcon = await $('//android.widget.TextView[@text="Shop"]');
 		shopIcon.isDisplayed();
